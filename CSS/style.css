@@ -63,6 +63,10 @@ header .deskstop-nav-links{
   gap: 1rem;
 
 }
+.features{
+  background-color:red;
+  color:white;
+}
 
 
 @media(min-width: 1023px){
