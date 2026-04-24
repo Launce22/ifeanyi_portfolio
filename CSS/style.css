@@ -64,7 +64,109 @@ header .deskstop-nav-links{
 
 }
 
+.hero{
+  width: 100%;
+  min-height: calc(100vh-4.5rem);
+  background-image: url(../Images/background-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  justify-content: center;
+  gap: 1.5rem;
+}
 
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.hero-container{
+  padding: 2rem 1rem;
+}
+
+.hero h1{
+  padding: 5rem 1rem 2rem;
+  font-size: 4rem;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+
+}
+
+.hero p{
+  padding: 0 1rem 2rem;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero a{
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 1rem 2rem;
+}
+
+.hero-photo{
+  display: flex;
+  flex-direction: column;
+  justify-self: end;
+  width: 50%;
+  
+}
+
+.about-me{
+  width: 100%;
+  min-height: calc(100vh-4.5rem);
+  margin-top: 6rem;
+
+}
+
+.about-me2 h2{
+  font-size: 1.3rem ;
+  margin-bottom: 8rem;
+  display: flex;
+  padding: 0 3.5rem;
+}
+
+.about-me2 p{
+  font-size: 1.5rem;
+  display: flex;
+  padding: 0 3rem;
+  position: absolute;
+  width: 500px;
+}
+
+.photo-2 img{
+  width: 30%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-self: end;
+  /* position: relative; */
+  padding-right: 2rem;
+  border-radius: 10px;
+  
+}
+.photo-2 h2{
+  display: flex;
+  justify-self:end;
+  width: 250px;
+  margin-bottom: 1rem;
+  
+  
+
+}
 @media(min-width: 1023px){
   .mobile button{
     display: none;
