@@ -167,6 +167,11 @@ header .deskstop-nav-links{
   
 
 }
+
+.hello p{
+  background-color:blue;
+  color:white;
+}
 @media(min-width: 1023px){
   .mobile button{
     display: none;
