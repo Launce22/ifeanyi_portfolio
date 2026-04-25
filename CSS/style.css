@@ -2,7 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+}
+
+header{
+  font-family: Arial, Helvetica, sans-serif
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 ul li{
@@ -44,6 +50,8 @@ header .deskstop-nav-links{
 
 .logo{
   display: flex;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 .mobile ul.mobile-dropdown{
@@ -74,6 +82,7 @@ header .deskstop-nav-links{
   position: relative;
   justify-content: center;
   gap: 1.5rem;
+  display: flex;
 }
 
 .overlay{
@@ -117,6 +126,7 @@ header .deskstop-nav-links{
   margin: 1rem 2rem;
 }
 
+
 .hero-photo{
   display: flex;
   flex-direction: column;
@@ -129,49 +139,193 @@ header .deskstop-nav-links{
   width: 100%;
   min-height: calc(100vh-4.5rem);
   margin-top: 6rem;
+  display: flex;
+  
 
 }
 
 .about-me2 h2{
   font-size: 1.3rem ;
   margin-bottom: 8rem;
-  display: flex;
   padding: 0 3.5rem;
 }
 
 .about-me2 p{
   font-size: 1.5rem;
-  display: flex;
   padding: 0 3rem;
-  position: absolute;
   width: 500px;
 }
 
 .photo-2 img{
-  width: 30%;
-  height: 30%;
+  width: 300px;
+  height: auto;
   display: flex;
-  flex-direction: column;
-  justify-self: end;
-  /* position: relative; */
-  padding-right: 2rem;
-  border-radius: 10px;
+  margin-left: 20rem;
+  border-radius: 12px;
+  
+
+  
   
 }
 .photo-2 h2{
-  display: flex;
-  justify-self:end;
   width: 250px;
   margin-bottom: 1rem;
+  display: flex;
+  margin-left: 21rem;
   
-  
+}
+
+
+.container{
+  background-color: rgb(219, 208, 194);
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh-4.5rem);
+}
+
+
+
+.container h2{
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+} 
+
+
+
+
+.container-2{
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) ;
+  grid-template-rows: 1 100px;
+  gap: 1rem;
+}
+
+.container-2 div{
+  background-color: blue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  height: 20rem;
+  margin-top: 4rem;
+  transition: scale 0.2s ease-in-out;
+
+}
+.container-2 div:hover{
+  background-color: rgb(193, 219, 76);
+  color: black;
+  scale: 1.05;
+}
+
+.container-2 i{
+  margin-top: 2rem;
+}
+
+.container-2 div :nth-child(1){
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.container-2 div :nth-child(1){
+  grid-column: 2/3;
+  grid-row: 2/2;
+}
+
+.container-2 div :nth-child(1){
+  grid-column: 3/4;
+  grid-row: 3/2;
+}
+
+.container-2 h2{
+  padding: 1rem;
+}
+
+.container-2 p{
+  padding: 0 1rem;
+}  
+
+
+/* contact form */
+.contact{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 4rem 0;
+  width: 100%;
+}
+
+.contact-intro{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.contact-intro p{
+  font-size: 0.9rem;
+  text-align: center;
+  width: 90%;
+}
+
+.contact form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width:100%;
+  max-width: 40rem;
+  margin: 0 auto;
+  background-color: blue;
+  padding: 3rem 1rem;
+  border-radius: 15px;
+}
+
+.contact label{
+  color: #f6f6f6;
+  font-size: 0.9rem;
+}
+
+.first-last,
+.email-course {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 
 }
 
-.hello p{
-  background-color:blue;
-  color:white;
+.comment{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
+
+.contact form input{
+  outline: 0;
+  height: 2rem;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0 0.5rem;
+}
+
+.comment textarea{
+  min-height: 6rem;
+}
+
+.contact button{
+  background-color: rgb(193, 219, 76);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0.9rem;
+  border-radius: 15px;
+  font-weight: 600;
+  transition: filter 0.2s ease-in-out;
+}
+.contact button:hover{
+  filter: brightness(0.9);
+}
+
 @media(min-width: 1023px){
   .mobile button{
     display: none;
@@ -189,13 +343,13 @@ header .deskstop-nav-links{
   }
 
   header .deskstop-nav-links a{
-    color: black;
+    color: blue;
     font-weight: 600;
     font-size: 0.95rem;
   }
   
   header .deskstop-nav-links a:hover{
-    color: blue;
+    color:  rgb(193, 219, 76);
   }
 
 
@@ -237,3 +391,22 @@ header .deskstop-nav-links{
 
 }
 
+
+
+/* @media(min-width: 320px){
+  .hero {
+    min-height: 60vh;
+  }
+  .hero p{
+    font-size: 0.6rem;
+  }
+  .hero h1{
+    font-size: 2rem;
+  }
+} */
+
+
+
+@media(min-width: 768px){
+
+}
