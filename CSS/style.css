@@ -5,10 +5,10 @@
 }
 
 header{
-  font-family: Arial, Helvetica, sans-serif
+  font-family:'Montserrat' , 'Poppins' , 'Raleway';
 }
 body{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open sans' , 'Roboto' , 'Lato';
 }
 
 ul li{
@@ -312,6 +312,7 @@ header .deskstop-nav-links{
 
 .comment textarea{
   min-height: 6rem;
+  padding: 0.5rem;
 }
 
 .contact button{
@@ -321,10 +322,19 @@ header .deskstop-nav-links{
   border-radius: 15px;
   font-weight: 600;
   transition: filter 0.2s ease-in-out;
+  margin: 0.9rem 0;
 }
 .contact button:hover{
   filter: brightness(0.9);
 }
+
+footer{
+  background-color: rgb(58, 48, 48);
+  color: #f6f6f6;
+  padding: 4rem;
+  text-align: center;
+}
+
 
 @media(min-width: 1023px){
   .mobile button{
