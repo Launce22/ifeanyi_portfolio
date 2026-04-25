@@ -54,6 +54,8 @@ header .deskstop-nav-links{
   font-size: 1.5rem;
 }
 
+/* for mobile dropdowns */
+
 .mobile ul.mobile-dropdown{
   position: absolute;
   right: 0;
@@ -71,6 +73,7 @@ header .deskstop-nav-links{
   gap: 1rem;
 
 }
+/* hero section */
 
 .hero{
   width: 100%;
@@ -135,6 +138,7 @@ header .deskstop-nav-links{
   
 }
 
+/* About me section */
 .about-me{
   width: 100%;
   min-height: calc(100vh-4.5rem);
@@ -175,6 +179,8 @@ header .deskstop-nav-links{
   
 }
 
+
+/* skills section */
 
 .container{
   background-color: rgb(219, 208, 194);
@@ -328,6 +334,7 @@ header .deskstop-nav-links{
   filter: brightness(0.9);
 }
 
+/* footer section */
 footer{
   background-color: rgb(58, 48, 48);
   color: #f6f6f6;
