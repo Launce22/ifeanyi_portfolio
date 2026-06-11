@@ -79,17 +79,18 @@ header .deskstop-nav-links{
   width: 100%;
   max-width: 1200px;
   min-height: calc(100vh - 4.5rem);
-  background-image: url(../Images/background-2.jpg);
+  /* background-image: url(../Images/May\ 27\,\ 2026\,\ 09_04_27\ PM.png); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: #F8FAFC;
   position: relative;
   justify-content: center;
   gap: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  /* text-align: center; */
   margin: 0 auto;
   padding: 2rem 1rem;
   
@@ -109,6 +110,8 @@ header .deskstop-nav-links{
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 3;
 }
 
 .hero h1{
@@ -116,7 +119,8 @@ header .deskstop-nav-links{
   font-size: 2rem;
   line-height: 1.2;
   font-style: italic;
-  align-self: start;
+  text-align: center;
+  align-self: center;
 
 }
 
@@ -128,11 +132,21 @@ header .deskstop-nav-links{
 .hero a{
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 5px;
-  background-color: blue;
+  background-color: #2563EB;
   color: white;
   display: inline-block;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1rem;
   margin: 1rem 2rem;
+  width: fit-content;
+  transition:transform .3s ease ease-in-out,
+  background .3s ease;
+
+}
+
+.hero a:hover{
+  background:#1D4ED8;
+  transform:translateY(-3px);
+
 }
 
 
@@ -140,12 +154,16 @@ header .deskstop-nav-links{
   display: flex;
   flex-direction: column;
   justify-self: end;
-  width: 50%;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  z-index: 3;
 }
 
 .hero-photo img{
   width: 100%;
   height: auto;
+  border-radius: 15px;
 }
 
 /* About me section */
@@ -224,7 +242,7 @@ header .deskstop-nav-links{
 }
 
 .container-2 div{
-  background-color: blue;
+  background-color:#2563EB ;
   color: white;
   display: flex;
   flex-direction: column;
@@ -233,16 +251,28 @@ header .deskstop-nav-links{
   border-radius: 15px;
   height: 20rem;
   margin-top: 4rem;
-  transition: scale 0.2s ease-in-out;
+  transition:
+  transform .3s ease,
+  box-shadow .3s ease;
+  /* transition: scale 0.2s ease-in-out; */
 
 }
+
 .container-2 div:hover{
+
+  transform:translateY(-8px);
+
+  box-shadow:
+  0 20px 40px rgba(0,0,0,.15);
+
+}
+/* .container-2 div:hover{
   background-color: rgb(193, 219, 76);
   color: black;
   scale: 1.05;
-}
+} */
 
-.container-2 i{
+/* .container-2 i{
   margin-top: 2rem;
 }
 
@@ -259,7 +289,7 @@ header .deskstop-nav-links{
 .container-2 div :nth-child(1){
   grid-column: 3/4;
   grid-row: 3/2;
-}
+} */
 
 .container-2 h2{
   padding: 1rem;
@@ -278,6 +308,7 @@ header .deskstop-nav-links{
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
+  background-color: #F8FAFC;
 }
 
 .contact-intro{
@@ -291,6 +322,8 @@ header .deskstop-nav-links{
   font-size: 0.9rem;
   text-align: center;
   width: 90%;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .contact form{
@@ -300,7 +333,7 @@ header .deskstop-nav-links{
   width:100%;
   max-width: 40rem;
   margin: 0 auto;
-  background-color: blue;
+  background-color: #2563EB;
   padding: 3rem 1rem;
   border-radius: 15px;
 }
@@ -326,7 +359,8 @@ header .deskstop-nav-links{
 
 .contact form input{
   outline: 0;
-  height: 2rem;
+  width: 100%;
+  height: 3rem;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 0 0.5rem;
@@ -334,6 +368,7 @@ header .deskstop-nav-links{
 
 .comment textarea{
   min-height: 6rem;
+  width: 100%;
   padding: 0.5rem;
 }
 
@@ -376,7 +411,7 @@ footer{
   }
 
   header .deskstop-nav-links a{
-    color: blue;
+    color: #2563EB;
     font-weight: 600;
     font-size: 0.95rem;
   }
@@ -448,10 +483,21 @@ footer{
 @media (min-width: 1024px) {
   .hero{
     flex-direction: row;
+    text-align: left;
   }
   .hero h1 {
     font-size: 4rem;
+    text-align: left;
+    align-self: flex-start;
   }
+}
+@media (min-width:1024px){
+
+  .hero-photo{
+    width:50%;
+    max-width:600px;
+  }
+
 }
 
 /* about me */
